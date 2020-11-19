@@ -1,0 +1,30 @@
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: blixttech/conan-recipe-templates
+      ref: blixttech
+      endpoint: blixttech
+
+extends:
+  template: .ci/azure.yml@templates
+  parameters:
+    conanLoginUsername: $(CONAN_LOGIN_USERNAME)
+    conanPassword: $(CONAN_PASSWORD)
+    # Common build settings
+    conanArchs: "x86_64"
+    conanBuildTypes: "Release"
+    conanStableBranchPattern: "stable/*"
+    # GCC specific
+    linuxGCCVersions: "7"
+    enableLinuxGCCBuilds: true
+    # Visual Studio specific
+    enableVsBuilds: true
+    vsVersions: "16"
+    conanVsRuntimes: "MD"
+    # Apple clang specific
+    appleClangVersions: "10"
+    enableAppleClangBuilds: true
+    # CI specific settings
+    splitByBuildTypes: "true"
+    requireMoreDiskSpace: "true"
