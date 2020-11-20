@@ -21,3 +21,4 @@ if __name__ == "__main__":
     except Exception as e:
         hidesensitive(traceback.format_exc())
         hidesensitive(str(e))
+        sys.exit(1)
