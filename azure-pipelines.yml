@@ -16,15 +16,15 @@ extends:
     conanBuildTypes: "Release"
     conanStableBranchPattern: "stable/*"
     # GCC specific
-    linuxGCCVersions: "7"
     enableLinuxGCCBuilds: true
+    linuxGCCVersions: "7"
     # Visual Studio specific
-    enableVsBuilds: true
+    enableVsBuilds: false
     vsVersions: "16"
     conanVsRuntimes: "MD"
     # Apple clang specific
+    enableAppleClangBuilds: false
     appleClangVersions: "10"
-    enableAppleClangBuilds: true
     # CI specific settings
     splitByBuildTypes: "true"
     requireMoreDiskSpace: "true"
