@@ -4,7 +4,7 @@ resources:
       type: github
       name: blixttech/conan-recipe-templates
       ref: blixttech
-      endpoint: blixttech
+      endpoint: conan-packages
 
 extends:
   template: .ci/azure.yml@templates
