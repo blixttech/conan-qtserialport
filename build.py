@@ -13,6 +13,7 @@ def hidesensitive(output):
 
 def get_name_and_version():
     conan_api, _, _ = Conan.factory()
+    conan_api.create_app()
     dir_path = os.path.dirname(os.path.realpath(__file__))
     conanfile = load_cf_class(os.path.join(dir_path, "conanfile.py"), conan_api)
     name = conanfile.name
