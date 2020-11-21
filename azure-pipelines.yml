@@ -15,6 +15,7 @@ extends:
     conanArchs: "x86_64"
     conanBuildTypes: "Release"
     conanOptions: "qtserialport:shared=True" # Build only the shared libraries
+    conanSharedOptionName: "qtserialport:shared"
     conanStableBranchPattern: "stable/*"
     # GCC specific
     enableLinuxGCCBuilds: true
