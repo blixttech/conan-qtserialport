@@ -16,12 +16,10 @@ class QtSerialPortConan(ConanFile):
     options = {"shared": [True, False]}
     default_options = {"shared": True}
 
-    """
     def set_version(self):
         git = tools.Git(folder=self.recipe_folder)
         version = re.sub(".*/", "", str(git.get_branch()))
         self.version = version
-    """
 
     def requirements(self):
         self.requires("qt/%s@bincrafters/stable" % self.version)
