@@ -19,11 +19,11 @@ extends:
     enableLinuxGCCBuilds: true
     linuxGCCVersions: "7"
     # Visual Studio specific
-    enableVsBuilds: true
+    enableVsBuilds: false
     vsVersions: "16"
     conanVsRuntimes: "MD"
     # Apple clang specific
-    enableAppleClangBuilds: true
+    enableAppleClangBuilds: false
     appleClangVersions: "10"
     # CI specific settings
     splitByBuildTypes: true
