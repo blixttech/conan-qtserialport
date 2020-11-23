@@ -1,4 +1,5 @@
 from conans import ConanFile, tools
+import re
 
 
 class QtSerialPortConan(ConanFile):
