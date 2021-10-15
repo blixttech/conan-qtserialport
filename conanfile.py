@@ -1,5 +1,6 @@
 from conans import ConanFile, tools
 
+
 class QtSerialPortConan(ConanFile):
     name = "qtserialport"
     description = "Serial port module for Qt"
@@ -14,3 +15,6 @@ class QtSerialPortConan(ConanFile):
     settings = "os", "arch", "compiler", "build_type"
     options = {"shared": [True, False]}
     default_options = {"shared": True}
+
+    module = "SerialPort"
+
